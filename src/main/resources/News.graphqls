@@ -1,0 +1,13 @@
+
+type News {
+    uri: String!
+    title: String!
+    description: String!
+    publishDate: String!
+    imageUrl: String!
+}
+
+type Query {
+    news(uri: String): News
+    allNews: [News]
+}
